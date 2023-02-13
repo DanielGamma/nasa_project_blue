@@ -10,18 +10,20 @@ import FavouritesPage from "./components/FavouritesPage/FavouritesPage";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />}>
-          <Route path="/landings" element={<MapPage />} />
-          <Route path="/landings/list" element={<LandingsPage />} />
-          <Route path="/landings/details/:id" element={<DetailsPage />} />
-          <Route path="/landings/create" element={<FormPage />} />
-          <Route path="/landings/update/:id" element={<FormPage />} />
-          <Route path="/favourites" element={<FavouritesPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="landings" element={<MapPage />} />
+          <Route path="landings/list" element={<LandingsPage />} />
+          <Route path="landings/details/:id" element={<DetailsPage />} />
+          <Route path="landings/create" element={<FormPage />} />
+          <Route path="landings/update/:id" element={<FormPage />} />
+          <Route path="favourites" element={<FavouritesPage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
