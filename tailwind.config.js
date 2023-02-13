@@ -3,7 +3,11 @@ module.exports = {
 content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-    theme: {
+    theme: { 
+      fontFamily: {
+        'monoton': ['Monoton', 'cursive'],
+        'dancing': ['Dancing Script', 'cursive'],
+      },
     extend: {},
   },
   plugins: [],
