@@ -4,7 +4,6 @@ import {
     Marker,
     Popup
 } from 'react-leaflet'
-import './MapPage.css'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import icon from 'leaflet/dist/images/marker-icon.png'
