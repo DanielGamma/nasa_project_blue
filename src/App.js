@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-import HomePage from "./pages/HomePage/HomePage";
-import MapPage from "./pages/MapPage/MapPage";
-import LandingsPage from "./pages/LandingsPage/LandingsPage";
-import DetailsPage from "./pages/DetailsPage/DetailsPage";
-import FormPage from "./pages/FormPage/FormPage";
-import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
+import HomePage from "./components/HomePage/HomePage";
+import MapPage from "./components/MapPage/MapPage";
+import LandingsPage from "./components/LandingsPage/LandingsPage";
+import DetailsPage from "./components/DetailsPage/DetailsPage";
+import FormPage from "./components/FormPage/FormPage";
+import FavouritesPage from "./components/FavouritesPage/FavouritesPage";
 
 function App() {
   return (
