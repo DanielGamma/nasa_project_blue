@@ -10,7 +10,8 @@ content: [
       },
     extend: {
       colors:{
-        "violin-dark":"#2A1C3D"
+        "violin-dark":"#2A1C3D",
+        'background-purple' : '#44318D'
       }
     },
   },
