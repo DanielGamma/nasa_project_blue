@@ -34,7 +34,7 @@ export default function MapPage() {
     return (
 
         <>
-            <div className="container overflow-hidden w-screen h-screen bg-[#433d99]">
+            <div className="overflow-hidden w-screen h-screen bg-background-purple">
                 <Header />
                 <div className='flex justify-center mt-10'>
                     <MapContainer center={{ lat: 40.6714400, lon: -2.5607400 }} zoom={5} className="w-[80%] h-[500px]">
