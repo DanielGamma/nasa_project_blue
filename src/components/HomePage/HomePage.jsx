@@ -1,5 +1,5 @@
 
-// import Logo from "../Logo/Logo"
+import Logo from "../Logo/Logo"
 import Footer from "../Footer/Footer"
 
 export default function HomePage() {

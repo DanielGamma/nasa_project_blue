@@ -8,7 +8,11 @@ content: [
         'monoton': ['Monoton', 'cursive'],
         'dancing': ['Dancing Script', 'cursive'],
       },
-    extend: {},
+    extend: {
+      colors:{
+        "violin-dark":"#2A1C3D"
+      }
+    },
   },
   plugins: [],
 }
