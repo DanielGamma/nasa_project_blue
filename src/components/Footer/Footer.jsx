@@ -1,27 +1,28 @@
 export default function Footer() {
     return (
         <>
-            <div className= "flex gap-14 justify-center items-center p-8">
+            <div className="flex gap-14 justify-center items-center p-8">
                 <div>
-                    <h1 className="decoration-fuchsia-50">Contact</h1>
-                    <p>nasa.api@nasa-api.com</p>
-                    <p>Work whith us.</p>
+                    <p className="text-fuchsia-500 text-2xl p-4 mt-1.5 font-semibold">Contact</p>
+                    <p className="font-medium">nasa.api@nasa-api.com</p>
+                    <p className="font-medium">Work whith us.</p>
                 </div>
 
+                <div className="text-fuchsia-500 h-8 w-1" ></div>
 
                 <div>
-                    <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor.</p>
+                    <p className="text-fuchsia-500 text-2xl p-4 mt-1.5 font-semibold">About</p>
+                    <p className="font-medium">Lorem ipsum dolor sit amet.</p>
+                    <p className="font-medium">Lorem ipsum dolor sit.</p>
+                    <p className="font-medium">Lorem ipsum dolor.</p>
 
                 </div>
 
-                <div></div>
+                <div className="text-fuchsia-500 h-8 w-1" ></div>
 
                 <div>
-                    <h3>Documentation</h3>
-                    <p>API documentation.</p>
+                    <p className="text-fuchsia-500 text-2xl p-4 mt-1.5 font-semibold">Documentation</p>
+                    <p className="font-medium">API documentation.</p>
 
                 </div>
             </div>
