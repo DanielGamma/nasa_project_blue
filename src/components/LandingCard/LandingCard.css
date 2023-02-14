@@ -1,0 +1,13 @@
+.card:hover > p::after{
+    content: '';
+    display: block;
+    margin-top: 2px;
+    width: 80%;
+    height: 2px;
+    background-color: red;
+}
+
+
+.hover{
+    transition: display 2s ease-in-out;
+}
