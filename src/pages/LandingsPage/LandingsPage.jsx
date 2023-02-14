@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import LandingsList from "../LandingsList/LandingsList"
+import LandingsList from "../../components/LandingsList/LandingsList"
 
 
 export default function LandingsPage (){
