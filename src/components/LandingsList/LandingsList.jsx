@@ -1,4 +1,4 @@
-import LandingCard from "../../pages/LandingCard/LandingCard"
+import LandingCard from "../LandingCard/LandingCard"
 
 
 
