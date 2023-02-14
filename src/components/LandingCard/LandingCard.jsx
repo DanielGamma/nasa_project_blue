@@ -2,7 +2,7 @@
 
 
 const LandingsCard = ({ asteroid }) => {
-    console.log(asteroid)
+    
 
 
     return (
