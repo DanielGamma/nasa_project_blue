@@ -4,7 +4,7 @@ import './LandingCard.css'
 
 const LandingsCard = ({ asteroid }) => {
 
-    console.log(asteroid)
+   
 
     return (
         <div className="group text-white bg-violin-dark rounded-lg
