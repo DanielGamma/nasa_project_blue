@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
+
 import HomePage from "./pages/HomePage/HomePage";
 import MapPage from "./pages/MapPage/MapPage";
 import LandingsPage from "./pages/LandingsPage/LandingsPage";
@@ -9,12 +10,14 @@ import FormPage from "./pages/FormPage/FormPage";
 import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
 
 function App() {
+  
+
   return (
     <>
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage  />} />
           <Route path="landings" element={<MapPage />} />
           <Route path="landings/list" element={<LandingsPage />} />
           <Route path="landings/details/:id" element={<DetailsPage />} />
