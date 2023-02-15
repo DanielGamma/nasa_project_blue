@@ -6,7 +6,7 @@ const LandingsCard = ({ asteroid }) => {
 
 
     return (
-        <div className="text-white bg-purple-900 flex justify-center items-center w-60 h-60 font-semibold text-2xl text-center rounded-lg">
+        <div className="text-white bg-violin-dark flex justify-center items-center w-60 h-60 font-semibold text-2xl text-center rounded-lg">
             <p>{Object.hasOwn(asteroid, 'name') ? asteroid.name : ''}</p>
         </div>
     )
