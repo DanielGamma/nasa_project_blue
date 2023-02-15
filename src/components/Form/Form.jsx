@@ -33,7 +33,7 @@ export default function Form() {
                 <label className="text-slate-300" htmlFor="mass">Mass:</label>
                 <input className="rounded-full border border-fuchsia-700 bg-background-purple" type="text" id="mass" required />
                 <label className="text-slate-300" htmlFor="date">Date:</label>
-                <input className="rounded-full border border-fuchsia-700 bg-background-purple" type="date" id="date" required />
+                <input className="rounded-full border border-fuchsia-700 bg-background-purple  w-[179px]" type="date" id="date" required />
                 <label className="text-slate-300" htmlFor="latitud">Latitud:</label>
                 <input className="rounded-full border border-fuchsia-700 bg-background-purple" type="text" id="latitud" required />
                 <label className="text-slate-300" htmlFor="longitud">Longitud:</label>
