@@ -1,13 +1,17 @@
-.card:hover > p::after{
+.card::after{
     content: '';
     display: block;
     margin-top: 2px;
-    width: 80%;
+    width: 0%;
     height: 2px;
     background-color: red;
+    transition: width 1s ease 0.7s;
+    align-self: center;
+    transform-origin: 0%;
+}
+
+.group:hover .card::after{
+    width: 100%;
 }
 
 
-.hover{
-    transition: display 2s ease-in-out;
-}
