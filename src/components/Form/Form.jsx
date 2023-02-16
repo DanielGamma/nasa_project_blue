@@ -38,7 +38,7 @@ export default function Form() {
                 <input className="rounded-full border border-fuchsia-700 bg-background-purple" type="text" id="latitud" required />
                 <label className="text-slate-300" htmlFor="longitud">Longitud:</label>
                 <input className="rounded-full border border-fuchsia-700 bg-background-purple" type="text" id="longitud" required />
-                <button className="text-slate-300 text-xs border rounded-full border-fuchsia-700 p-2 font-light w-20" type="submit"> Create</button>
+                <input  type="submit"className="text-slate-300 text-xs border rounded-full border-fuchsia-700 p-2 font-light w-20"></input>
             </form>
         </div>
 
