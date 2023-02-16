@@ -3,6 +3,7 @@ import { useEffect, useState, createContext, useContext } from "react"
 import LandingsList from "../../components/LandingsList/LandingsList"
 import Header from '../../components/Header/Header'
 import { AsteroidContext } from "../../App"
+import Loading from "../../components/Loading/Loading"
 
 
 
@@ -21,9 +22,11 @@ export default function LandingsPage() {
     return (
         <>
             <Header />
-            <div className="bg-background-purple flex p-10">
+            <div className="bg-background-purple flex justify-center items-center p-10">
                 
-                    <LandingsList asteroids={asteroids} />
+                    {
+                        !asteroids ? <Loading /> : <LandingsList asteroids={asteroids} />
+                    }
                 
             </div>
         </>
