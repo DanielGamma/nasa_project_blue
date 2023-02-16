@@ -34,7 +34,7 @@ export default function Form() {
 
             fetch("https://nasa-api-us5g.onrender.com/api/landings/create", {
                 method: 'POST',
-                body: createApiObjet(),
+                body: createApiObjet(event),
                 headers: {
                     'Content-Type': 'application/json'
                 }
