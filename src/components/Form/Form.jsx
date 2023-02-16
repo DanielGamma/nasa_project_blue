@@ -80,7 +80,7 @@ export default function Form() {
                 <input className="rounded-full border border-fuchsia-700 bg-background-purple" type="text" id="latitud" required placeholder={asteroid ? asteroid.reclat : ""} />
                 <label className="text-slate-300" htmlFor="longitud">Longitud:</label>
                 <input className="rounded-full border border-fuchsia-700 bg-background-purple" type="text" id="longitud" required placeholder={asteroid ? asteroid.reclong : ""} />
-                <button className="text-slate-300 text-xs border rounded-full border-fuchsia-700 p-2 font-light w-20" type="submit">{id ? "Update" : "Create"}</button>
+                <input type="submit" className="text-slate-300 text-xs border rounded-full border-fuchsia-700 p-2 font-light w-20" ></input>
             </form>
         </div>
 
