@@ -8,16 +8,17 @@ import LandingsPage from "./pages/LandingsPage/LandingsPage";
 import DetailsPage from "./pages/DetailsPage/DetailsPage";
 import FormPage from "./pages/FormPage/FormPage";
 import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
+import Loading from "./components/Loading/Loading";
 
 export const AsteroidContext = createContext()
 
 function App() {
 
-  const [asteroids, setAsteroids] = useState([])
+  const [asteroids, setAsteroids] = useState(false)
 
   return (
     <>
-
+        
       <BrowserRouter>
         <AsteroidContext.Provider value={{setAsteroids, asteroids}}>
           <Routes>
