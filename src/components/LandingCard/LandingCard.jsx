@@ -1,5 +1,6 @@
 
 import LandingButton from '../LandingButton/LandingButton'
+import FavButton from '../FavButton/FavButton'
 import './LandingCard.css'
 import { useNavigate } from 'react-router'
 
@@ -25,7 +26,7 @@ const LandingsCard = ({ asteroid }) => {
                     <div className='flex gap-4 self-center absolute translate-x-4 -bottom-14 z-50 opacity-0 group-hover:opacity-100 transition-all duration-700 delay-300'>
                         <LandingButton isDeleteBtn={false} url={`/landings/update/${asteroid.id}`} asteroid={asteroid} />
                         <LandingButton isDeleteBtn={true} url={ ''} asteroid={asteroid} />
-                        <LandingButton isDeleteBtn={true} url={''} asteroid={asteroid}/>
+                        <FavButton/>
                     </div>
             </div>
         </div>

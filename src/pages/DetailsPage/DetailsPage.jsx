@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Header from "../../components/Header/Header";
-import './DetailsPage.css'
 import LandingButton from "../../components/LandingButton/LandingButton";
 
 
