@@ -2,14 +2,14 @@
 import { useEffect, useState, createContext, useContext } from "react"
 import LandingsList from "../../components/LandingsList/LandingsList"
 import Header from '../../components/Header/Header'
-import { asteroidContext } from "../../App"
+import { AsteroidContext } from "../../App"
 
 
 
 export default function LandingsPage() {
 
 
-    const {setAsteroids, asteroids} = useContext(asteroidContext)
+    const {setAsteroids, asteroids} = useContext(AsteroidContext)
     
 
 

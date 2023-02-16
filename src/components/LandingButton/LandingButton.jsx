@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
-import { asteroidContext } from '../../App'
+import { AsteroidContext } from '../../App'
 
 
 
 const LandingButton = ({ isDeleteBtn, url, fromDetail, asteroid }) => {
 
-    const {setAsteroids} = useContext(asteroidContext)
+    const {setAsteroids} = useContext(AsteroidContext)
     
     const navigate = useNavigate()
 

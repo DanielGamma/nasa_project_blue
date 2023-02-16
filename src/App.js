@@ -9,7 +9,7 @@ import DetailsPage from "./pages/DetailsPage/DetailsPage";
 import FormPage from "./pages/FormPage/FormPage";
 import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
 
-export const asteroidContext = createContext()
+export const AsteroidContext = createContext()
 
 function App() {
 
