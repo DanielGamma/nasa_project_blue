@@ -1,6 +1,6 @@
 
 export default function AstroPicDay ({astro}){
-    console.log(astro)
+   
  
   return(<>
     <div className=" bg-background-purple flex flex-col items-center gap-2 py-6">
