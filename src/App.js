@@ -19,7 +19,7 @@ function App() {
     <>
 
       <BrowserRouter>
-        <asteroidContext.Provider value={{setAsteroids, asteroids}}>
+        <AsteroidContext.Provider value={{setAsteroids, asteroids}}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="landings" element={<MapPage />} />
@@ -29,7 +29,7 @@ function App() {
             <Route path="landings/update/:id" element={<FormPage />} />
             <Route path="favourites" element={<FavouritesPage />} />
           </Routes>
-        </asteroidContext.Provider>
+        </AsteroidContext.Provider>
       </BrowserRouter>
     </>
   );
