@@ -45,9 +45,7 @@ export default function MapPage() {
                                         lon: asteroidPosition.geolocation.longitude
                                     }
                                     return <Marker key={i} position={{ lat: latLon['lat'], lon: latLon['lon'] }} icon={iconUbi}>
-                                        <Popup>
-                                            <p>Hola</p>
-                                        </Popup>
+                                        
                                     </Marker>
                                 }
 
