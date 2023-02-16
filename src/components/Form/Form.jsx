@@ -2,43 +2,39 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 export default function Form() {
+
+    function createApiObjet(event) {
+        return JSON.stringify({
+            name:event.target.elements[0].value,
+            id:event.target.elements[1].value,
+            recclass:event.target.elements[2].value,
+            mass:event.target.elements[3].value,
+            year:event.target.elements[4].value,
+            reclat:event.target.elements[5].value,
+            reclong:event.target.elements[6].value
+
+        })
+
+    }
     const submitForm = (event) => {
         event.preventDefault();
         if (id) {
 
-            fetch(`https://nasa-api-us5g.onrender.com/api/landings/edit/${id}`, {
+            fetch(`https://nasa-api-us5g.onrender.com/api/landings/edit/${id}`,{
                 method: 'PUT',
-                body: JSON.stringify({
-                    name: event.target.elements[0].value,
-                    id: event.target.elements[1].value,
-                    recclass: event.target.elements[2].value,
-                    mass: event.target.elements[3].value,
-                    year: event.target.elements[4].value,
-                    reclat: event.target.elements[5].value,
-                    reclong: event.target.elements[6].value
-                }),
-
+                body: createApiObjet(event),
                 headers: {
                     'Content-Type': 'application/json'
                 }
             }).then(res => res.json())
                 .catch(error => console.error('Error:', error))
-                .then(response => console.log('Success:', response))
+                .then(response => console.log('Success:', response));
 
-        } else {
+        }else {
 
             fetch("https://nasa-api-us5g.onrender.com/api/landings/create", {
                 method: 'POST',
-                body: JSON.stringify({
-                    name: event.target.elements[0].value,
-                    id: event.target.elements[1].value,
-                    recclass: event.target.elements[2].value,
-                    mass: event.target.elements[3].value,
-                    year: event.target.elements[4].value,
-                    reclat: event.target.elements[5].value,
-                    reclong: event.target.elements[6].value
-                }),
-
+                body: createApiObjet(),
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -56,11 +52,11 @@ export default function Form() {
             fetch(`https://nasa-api-us5g.onrender.com/api/landings/id/${id}`)
                 .then(res => res.json())
                 .then(res => setAsteroid(res.landings[0]))
-        }else{
+        } else {
             setAsteroid(null);
         }
 
-    },[id, asteroid])
+    }, [id, asteroid])
 
 
     return (
