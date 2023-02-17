@@ -50,18 +50,18 @@ export default function MapPage() {
                                         lon: asteroidPosition.geolocation.longitude
                                     }
                                     return <Marker key={i} position={{ lat: latLon['lat'], lon: latLon['lon'] }} icon={iconUbi}>
-                                        
+
                                     </Marker>
                                 }
 
                             })
                         }
-                        
+
 
                     </MapContainer>
                 </div>
-                </div>
-           
+            </div>
+
         </>
 
     )

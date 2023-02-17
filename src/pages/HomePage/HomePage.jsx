@@ -2,6 +2,7 @@ import AstroPicDay from "../../components/Astro/AstroPicDay"
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
 import { useState, useEffect } from "react"
+import Loading from "../../components/Loading/Loading"
 
 
 export default function HomePage() {
@@ -18,7 +19,9 @@ export default function HomePage() {
     return (
         <>
             <Header />
-            <AstroPicDay astro={astro} />
+            {
+                !astro ? <Loading /> : <AstroPicDay astro={astro} />
+            }
             <Footer />
         </>
     )

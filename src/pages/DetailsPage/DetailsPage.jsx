@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Header from "../../components/Header/Header";
 import LandingButton from "../../components/LandingButton/LandingButton";
+import Loading from "../../components/Loading/Loading";
 import FavButton from "../../components/FavButton/FavButton";
 
 
@@ -11,10 +12,13 @@ export default function DetailsPage() {
     const { id } = useParams()
     const [asteroid, setAsteroid] = useState({})
 
-   
+
     useEffect(() => {
         fetch(`https://nasa-api-us5g.onrender.com/api/landings/id/${id}`).then(res => res.json()).then(res => setAsteroid(res.landings[0]))
     }, [])
+
+
+
 
     return (<>
         <Header />
@@ -30,9 +34,8 @@ export default function DetailsPage() {
                 <div className="flex justify-center gap-10 mt-3">
                     <LandingButton fromDetail={true} url={`/landings/update/${asteroid.id}`} asteroid={asteroid}/>
                     <LandingButton fromDetail={true} isDeleteBtn={true} asteroid={asteroid} />
-                    <FavButton fromDetail={true}/>
                 </div>
             </div>
-        </div>
+        }
     </>)
 }
