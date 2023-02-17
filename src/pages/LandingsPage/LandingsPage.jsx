@@ -9,7 +9,7 @@ import { AsteroidContext } from "../../App"
 export default function LandingsPage() {
 
 
-    const {setAsteroids, asteroids} = useContext(AsteroidContext)
+    const {setAsteroids, asteroids, favAstro,setFavAstro} = useContext(AsteroidContext)
     
 
 
@@ -23,7 +23,7 @@ export default function LandingsPage() {
             <Header />
             <div className="bg-background-purple flex p-10">
                 
-                    <LandingsList asteroids={asteroids} />
+                    <LandingsList favAstro={favAstro} setFavAstro={setFavAstro} asteroids={asteroids} />
                 
             </div>
         </>
