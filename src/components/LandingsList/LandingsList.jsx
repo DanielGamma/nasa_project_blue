@@ -7,8 +7,6 @@ const LandingsList = ({asteroids,favAstro,setFavAstro,printFav}) => {
     
    
 
-    console.log(favAstro, 'FAVASTRO')
-    console.log(printFav, 'PRINTFAV')
     return (
         <div className="flex gap-4 flex-wrap justify-center relative">
             
