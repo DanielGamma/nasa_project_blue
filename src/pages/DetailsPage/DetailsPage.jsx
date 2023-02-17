@@ -36,6 +36,7 @@ export default function DetailsPage() {
                     <LandingButton fromDetail={true} isDeleteBtn={true} asteroid={asteroid} />
                 </div>
             </div>
-        }
+       </div>     
+        
     </>)
 }
