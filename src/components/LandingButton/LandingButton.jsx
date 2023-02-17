@@ -6,6 +6,8 @@ import { AsteroidContext } from '../../App'
 
 
 const LandingButton = ({ isDeleteBtn, url, fromDetail, asteroid }) => {
+    
+    
 
     const {setAsteroids} = useContext(AsteroidContext)
     
@@ -30,7 +32,7 @@ const LandingButton = ({ isDeleteBtn, url, fromDetail, asteroid }) => {
                 
                 return holdPrev.filter(asteroid => asteroid.id !== res.landing.id)
             })
-            navigate('/landings/list')
+            
         } )
         
     }

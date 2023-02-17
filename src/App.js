@@ -14,13 +14,15 @@ export const AsteroidContext = createContext()
 
 function App() {
 
-  const [asteroids, setAsteroids] = useState(false)
+  const [asteroids, setAsteroids] = useState([])
+  const[favAstro,setFavAstro] = useState(false)
+
 
   return (
     <>
         
       <BrowserRouter>
-        <AsteroidContext.Provider value={{setAsteroids, asteroids}}>
+        <AsteroidContext.Provider value={{setAsteroids, asteroids,favAstro,setFavAstro}}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="landings" element={<MapPage />} />

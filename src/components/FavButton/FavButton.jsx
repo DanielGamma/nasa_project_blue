@@ -1,5 +1,10 @@
-export default function FavButton(){
+export default function FavButton({fromDetail,asteroid,setFavAstro}){
+    const fav = () => {
+        
+        setFavAstro(prev => {
+            prev === false?  [asteroid.id] : [...prev,asteroid.id]
+    })
     return(
-        <i class="fa-regular fa-heart cursor-pointer hover:scale-110 transition-transform duration-300"></i>
+        <i onClick={fav} className={`fa-regular fa-heart cursor-pointer ${fromDetail ? 'text-4xl' : ''} hover:scale-110 transition-transform duration-300`}></i>
     )
-}
+}}
